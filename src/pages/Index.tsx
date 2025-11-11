@@ -18,26 +18,26 @@ const Index = () => {
 
   const projects = [
     {
-      title: 'Neural Networks',
-      description: 'Deep learning experiments',
+      title: 'Нейронные сети',
+      description: 'Эксперименты с глубоким обучением',
       tech: 'Python, TensorFlow',
       link: '#'
     },
     {
-      title: 'Web Platform',
-      description: 'Modern web applications',
+      title: 'Веб-платформа',
+      description: 'Современные веб-приложения',
       tech: 'React, TypeScript',
       link: '#'
     },
     {
-      title: 'Data Viz',
-      description: 'Interactive visualizations',
+      title: 'Визуализация данных',
+      description: 'Интерактивные визуализации',
       tech: 'D3.js, WebGL',
       link: '#'
     },
     {
-      title: 'API Design',
-      description: 'RESTful architectures',
+      title: 'API дизайн',
+      description: 'RESTful архитектура',
       tech: 'Node.js, GraphQL',
       link: '#'
     }
@@ -63,12 +63,12 @@ const Index = () => {
         <header className="fixed top-0 left-0 right-0 z-50 px-6 py-6 backdrop-blur-sm">
           <nav className="max-w-7xl mx-auto flex justify-between items-center">
             <div className={`font-heading font-bold text-xl transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-              <span className="text-gradient">portfolio</span>
+              <span className="text-gradient">портфолио</span>
             </div>
             <div className={`flex gap-6 transition-all duration-700 delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-              <a href="#work" className="hover:text-primary transition-colors duration-300">Work</a>
-              <a href="#about" className="hover:text-primary transition-colors duration-300">About</a>
-              <a href="#contact" className="hover:text-primary transition-colors duration-300">Contact</a>
+              <a href="#work" className="hover:text-primary transition-colors duration-300">Работы</a>
+              <a href="#about" className="hover:text-primary transition-colors duration-300">Обо мне</a>
+              <a href="#contact" className="hover:text-primary transition-colors duration-300">Контакты</a>
             </div>
           </nav>
         </header>
@@ -80,8 +80,8 @@ const Index = () => {
                 <span className="block text-gradient hover-glow cursor-default">Hello</span>
               </h1>
               <p className={`text-muted-foreground text-lg md:text-xl max-w-2xl transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                Building digital experiences that blend design and code. 
-                Specialized in modern web technologies and creative solutions.
+                Создаю цифровые продукты на стыке дизайна и кода. 
+                Специализируюсь на современных веб-технологиях и креативных решениях.
               </p>
             </div>
 
@@ -91,7 +91,7 @@ const Index = () => {
                 className="group px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
               >
                 <span className="flex items-center gap-2">
-                  View Work
+                  Смотреть работы
                   <Icon name="ArrowRight" className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
               </a>
@@ -99,14 +99,14 @@ const Index = () => {
                 href="#contact" 
                 className="px-8 py-4 border-2 border-border rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:border-primary hover:text-primary"
               >
-                Get in Touch
+                Связаться
               </a>
             </div>
           </section>
 
           <section id="work" className="max-w-7xl mx-auto mt-32 scroll-mt-24">
             <h2 className="font-heading font-bold text-4xl md:text-5xl mb-16">
-              Selected <span className="text-gradient">Work</span>
+              Избранные <span className="text-gradient">работы</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {projects.map((project, index) => (
@@ -152,16 +152,16 @@ const Index = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6">
-                  About <span className="text-gradient">Me</span>
+                  Обо <span className="text-gradient">мне</span>
                 </h2>
                 <div className="space-y-4 text-muted-foreground text-lg">
                   <p>
-                    I'm a developer who loves creating beautiful and functional web experiences. 
-                    With a focus on modern technologies and clean code.
+                    Я разработчик, который любит создавать красивые и функциональные веб-проекты. 
+                    Фокусируюсь на современных технологиях и чистом коде.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, 
-                    contributing to open source, or sharing knowledge with the community.
+                    Когда не занимаюсь кодингом, изучаю новые технологии, 
+                    участвую в open source проектах и делюсь знаниями с сообществом.
                   </p>
                 </div>
               </div>
@@ -175,10 +175,10 @@ const Index = () => {
 
           <section id="contact" className="max-w-7xl mx-auto mt-32 scroll-mt-24">
             <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6 text-center">
-              Let's <span className="text-gradient">Connect</span>
+              Давайте <span className="text-gradient">познакомимся</span>
             </h2>
             <p className="text-muted-foreground text-lg text-center mb-12 max-w-2xl mx-auto">
-              Have a project in mind or just want to chat? Feel free to reach out through any of these platforms.
+              Есть проект или просто хотите пообщаться? Пишите через любую из этих платформ.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               {socials.map((social, index) => (
@@ -201,7 +201,7 @@ const Index = () => {
 
         <footer className="mt-32 py-8 border-t border-border">
           <div className="max-w-7xl mx-auto px-6 text-center text-muted-foreground">
-            <p>© 2024 Portfolio. Built with passion.</p>
+            <p>© 2024 Портфолио. Сделано с любовью.</p>
           </div>
         </footer>
       </div>
