@@ -104,50 +104,6 @@ const Index = () => {
             </div>
           </section>
 
-          <section id="work" className="max-w-7xl mx-auto mt-32 scroll-mt-24">
-            <h2 className="font-heading font-bold text-4xl md:text-5xl mb-16">
-              Избранные <span className="text-gradient">работы</span>
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {projects.map((project, index) => (
-                <a
-                  key={index}
-                  href={project.link}
-                  className="group relative p-8 rounded-2xl bg-card border border-border transition-all duration-500 hover:scale-[1.02] hover:border-primary hover:shadow-xl hover:shadow-primary/10"
-                  style={{
-                    animationDelay: `${index * 100}ms`,
-                    animationFillMode: 'backwards'
-                  }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
-                  
-                  <div className="relative z-10">
-                    <div className="flex justify-between items-start mb-4">
-                      <h3 className="font-heading font-bold text-2xl group-hover:text-primary transition-colors duration-300">
-                        {project.title}
-                      </h3>
-                      <Icon 
-                        name="ArrowUpRight" 
-                        className="w-6 h-6 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" 
-                      />
-                    </div>
-                    <p className="text-muted-foreground mb-4">{project.description}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tech.split(', ').map((tech, i) => (
-                        <span 
-                          key={i} 
-                          className="px-3 py-1 text-xs rounded-full bg-secondary text-secondary-foreground border border-border"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </section>
-
           <section id="about" className="max-w-7xl mx-auto mt-32 scroll-mt-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
