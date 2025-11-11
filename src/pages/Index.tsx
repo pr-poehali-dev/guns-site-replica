@@ -63,7 +63,7 @@ const Index = () => {
         <header className="fixed top-0 left-0 right-0 z-50 px-6 py-6 backdrop-blur-sm">
           <nav className="max-w-7xl mx-auto flex justify-between items-center">
             <div className={`font-heading font-bold text-xl transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-              <span className="text-gradient">портфолио</span>
+              <span className="text-gradient">rokrr</span>
             </div>
             <div className={`flex gap-6 transition-all duration-700 delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
               <a href="#work" className="hover:text-primary transition-colors duration-300">Работы</a>
