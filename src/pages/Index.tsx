@@ -77,8 +77,7 @@ const Index = () => {
           <section className="max-w-7xl mx-auto min-h-[80vh] flex flex-col justify-center">
             <div className={`space-y-6 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
               <h1 className="font-heading font-black text-6xl md:text-8xl lg:text-9xl leading-none tracking-tighter">
-                <span className="block hover-glow cursor-default">Creative</span>
-                <span className="block text-gradient hover-glow cursor-default">Developer</span>
+                <span className="block text-gradient hover-glow cursor-default">Hello</span>
               </h1>
               <p className={`text-muted-foreground text-lg md:text-xl max-w-2xl transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                 Building digital experiences that blend design and code. 
